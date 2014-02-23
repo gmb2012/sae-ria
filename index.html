@@ -1,0 +1,348 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html"
+      xmlns="http://www.w3.org/1999/html">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>WebEnginneering</title>
+
+		<meta name="description" content="WebEnginneering">
+		<meta name="author" content="Bjoern Zapadlo">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+        <link rel="stylesheet" href="css/custom.css">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
+		<script>
+            function zeroPad(num, places) {
+                var zero = places - num.toString().length + 1;
+                return Array(+(zero > 0 && zero)).join("0") + num;
+            }
+
+			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' )
+                    + '.css" type="text/css" media="print">' );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+        <style>
+            .questions .reveal .state-background {
+                background-image: url("images/tafel.jpg");
+                background-size:120% ;
+            }
+        </style>
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+                <section>
+                    <section>
+                        <h1>WebEngineering</h1>
+                        <h3><span id="today"></span> @ SAE Institute</h3>
+                        <h3>Bjoern Zapadlo</h3>
+
+                        <script>
+                            var date = new Date();
+                            document.getElementById("today").innerHTML = date.getDate() + "." + zeroPad(date.getMonth() + 1, 2) + "." + date.getFullYear();
+                        </script>
+                    </section>
+
+                    <section>
+                        <h2>About me</h2>
+                        <p>
+                            Bjoern Zapadlo<br />
+                            Konstanz<br />
+                            <span id="age"></span> Jahre
+                            <script>
+                                document.getElementById("age").innerHTML = Math.round((new Date() - new Date(1979, 6, 14)) / (1000*60*60*24*365))
+                            </script>
+                        </p>
+                        <p>
+                            Team Manager / Lead Developer HolidayCheck AG
+                        </p>
+                        <p>
+                            Informatik Studium 1999 - 2002<br />
+                            3 Agenturen in Stuttgart
+                        </p>
+                        <p>
+                            HolidayCheck International Websites / new Framework<br />
+                            Neckermann / Thomas Cook
+                        </p>
+                        <p>Dozent an der SAE, Dualen Hochschule Stuttgart, Hochschule Furtwangen</p>
+                        <p>PHP, Java, Scala, Javasccript, CSS, Html,MySQL, MongoDB, Elasticsearch, ...</p>
+                        <p>Seit über 10 Jahren im Web unterwegs</p>
+                    </section>
+
+                    <section>
+                        <h2>Contact me</h2>
+                        <p>
+                            bjoern.zapadlo@gmail.com<br />
+                            http://www.zapadlo.de
+                        </p>
+                        <p>
+                            @BjoeZap
+                        </p>
+                        <p>
+                            https://www.xing.com/profile/Bjoern_Zapadlo<br />
+                            http://de.linkedin.com/pub/bjoern-zapadlo/36/889/1a5
+                        </p>
+                        <p>
+                            Facebook<br />
+                            Google+
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>HolidayCheck AG</h2>
+                        <p>
+                            Größtes deutsches Meinungsportal für Reise und Urlaub<br />
+                            Vermittlung von Reisen<br />
+                            Sitz in der Schweiz, direkt am Bodensee<br />
+                            Börsennotiert über Tomorrow Focus AG<br />
+                            Existiert seit 1999<br />
+                            Ausgründungen in mehreren europäischen Ländern<br />
+                            Über 300 Mitarbeiter<br />
+                        </p>
+                    </section>
+
+                    <section>
+                        <blink id="blinktag"><h1>Yes, we hire ;)</h1></blink>
+                        <h3>http://www.holidaycheck.de/jobs</h3>
+                        <script>
+                         var el = document.getElementById('blinktag');
+                         setInterval(function(){
+                           if ( el.style.visibility != 'hidden' ) {
+                             el.style.visibility = 'hidden';
+                           }
+                           else {
+                             el.style.visibility = '';
+                           }
+                         }, 500);
+                         </script>
+                    </section>
+
+                    <section>
+                        <h3>Jetzt aber Schluss mit der Werbung... ;)</h3>
+                    </section>
+
+                    <section>
+                        <h2>Agenda</h2>
+                        <ol>
+                            <li>Motivation</li>
+                            <li>Git</li>
+                            <li>Bootstrap</li>
+                            <li>Javascript</li>
+                            <li>angular.js</li>
+                            <li>Q&A</li>
+                            <li>What's next?</li>
+                        </ol>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>01. Motivation</h1>
+                    </section>
+
+                    <section>
+                        <h2>Die Idee</h2>
+                        <h3>Coursera: Startup Engineering</h3>
+                        <p>by Balaji S. Srinivasan and Vijay S. Pande</p>
+                        <p>
+                            VMs, IAAS/PAAS, Unix Command Line, Text Editors, DCVS, HTML/CSS/JS, Wireframing, Databases, Frameworks, Data Pipelines,
+                            Client-side templating, HTTP, SOA/REST/JSON, API, ...
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2>Standards</h2>
+                        <h3>Was hat sich bewährt?</h3>
+                        <ul>
+                            <li>Performance (Entwicklungs- / Server / ...)</li>
+                            <li>Wartbarkeit</li>
+                            <li>Kosten</li>
+                            <li>...</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Webstartup</h2>
+                        <h3>Was muss ich wissen, um eine Webseite / Applikation zu bauen?</h3>
+                        <ul>
+                            <li>Rapid Application Development / Prototyp</li>
+                            <li>CMS / Frameworks / Tools / ...</li>
+                            <li>Skalierbarkeit</li>
+                            <li>...</li>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Trends</h2>
+                        <h3>Was ist state of the art und wie sieht die Zukunft aus?</h3>
+                        <ul>
+                            <li>Neue / weiterentwicklete Datenbanken, Frameworks, IDEs, ...</li>
+                            <li>Design-Pattern</li>
+                            <li>...</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>02. Git</h1>
+                    </section>
+
+                    <section>
+                        <h2>Ziel:</h2>
+                        <ul>
+                            <li>Was ist Git?</li>
+                            <li>Sollte ich Git für mein Projekt einsetzen?</li>
+                            <li>KnowHow / Tools</li>
+                            <li>Einsatzszenarien</li>
+                            <li>Alternativen</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>03. Bootstrap</h1>
+                    </section>
+
+                    <section>
+                        <h2>Ziel:</h2>
+                        <ul>
+                            <li>Was ist "responsive Design"?</li>
+                            <li>Warum sollte ich ein CSS Framework benutzen?</li>
+                            <li>Demo</li>
+                            <li>Vor- / Nachteile</li>
+                            <li>Alternativen</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>04. Javascript</h1>
+                    </section>
+
+                    <section>
+                        <h2>Ziel:</h2>
+                        <ul>
+                            <li>Warum Javascript DIE Sprache der Zukunft ist?</li>
+                            <li>Wo ist es integriert?</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>05. angular.js</h1>
+                    </section>
+
+                    <section>
+                        <h2>Ziel:</h2>
+                        <ul>
+                            <li>Was ist angular.js?</li>
+                            <li>Wofür eignet es sich?</li>
+                            <li>Demo</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>06. Q&A</h1>
+                    </section>
+
+                    <section data-state="questions">
+                        <h1>Fragen?</h1>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>07. What's next?</h1>
+                    </section>
+
+                    <section>
+                        <h3 class="tagcloud">SaaS / PaaS / Iaas</h3>
+                        <h3 class="tagcloud">node.js</h3>
+                        <h3 class="tagcloud">Less / Sass</h3>
+                        <h3 class="tagcloud">CoffeeScript</h3>
+                        <h3 class="tagcloud">NoSQL</h3>
+                        <h3 class="tagcloud">MongoDB</h3>
+                        <h3 class="tagcloud">Neo4J</h3>
+                        <h3 class="tagcloud">ElasticSearch</h3>
+                        <h3 class="tagcloud">scala</h3>
+                        <h3 class="tagcloud">Hadoop</h3>
+                        <h3 class="tagcloud">Future of SQL</h3>
+                        <h3 class="tagcloud">New Relic</h3>
+                        <h3 class="tagcloud">and much more</h3>
+                    </section>
+                </section>
+
+                <section>
+                    <h1>THE END</h1>
+                    <br /><br />
+                    <h3>Vielen Dank!</h3>
+                    <p>Made with <a href="http://lab.hakim.se/reveal-js">reveal.js</a>(with Html and JS)</p>
+                </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+                width: 1400,
+                height: 800,
+                controls: true,
+				progress: true,
+				history: true,
+				center: false,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: '/socket.io/socket.io.js', async: true },
+                    { src: 'plugin/notes-server/client.js', async: true }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+        </script>
+
+	</body>
+</html>
