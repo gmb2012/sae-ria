@@ -42,6 +42,11 @@
                 background-image: url("images/tafel.jpg");
                 background-size:120% ;
             }
+
+            .rich .reveal .state-background {
+                background-image: url("images/rich.jpg");
+                background-size:120%  ;
+            }
         </style>
 
 	</head>
@@ -55,7 +60,7 @@
 
                 <section>
                     <section>
-                        <h1>WebEngineering</h1>
+                        <h1>Rich Internet Applications</h1>
                         <h3><span id="today"></span> @ SAE Institute</h3>
                         <h3>Bjoern Zapadlo</h3>
 
@@ -72,7 +77,7 @@
                             Konstanz<br />
                             <span id="age"></span> Jahre
                             <script>
-                                document.getElementById("age").innerHTML = Math.round((new Date() - new Date(1979, 6, 14)) / (1000*60*60*24*365))
+                                document.getElementById("age").innerHTML = Math.floor((new Date() - new Date(1979, 5, 14)) / (1000*60*60*24*365))
                             </script>
                         </p>
                         <p>
@@ -87,8 +92,8 @@
                             Neckermann / Thomas Cook
                         </p>
                         <p>Dozent an der SAE, Dualen Hochschule Stuttgart, Hochschule Furtwangen</p>
-                        <p>PHP, Java, Scala, Javasccript, CSS, Html,MySQL, MongoDB, Elasticsearch, ...</p>
-                        <p>Seit über 10 Jahren im Web unterwegs</p>
+                        <p>PHP, Java, Scala, Javascript, CSS, Html,MySQL, MongoDB, Elasticsearch, ...</p>
+                        <p>Seit über 15 Jahren im Web unterwegs</p>
                     </section>
 
                     <section>
@@ -146,125 +151,91 @@
                     <section>
                         <h2>Agenda</h2>
                         <ol>
-                            <li>Motivation</li>
-                            <li>Git</li>
-                            <li>Bootstrap</li>
-                            <li>Javascript</li>
-                            <li>angular.js</li>
+                            <li>Definition</li>
+                            <li>Beispiele</li>
+                            <li>Verwendete Techniken</li>
+                            <li>Bibliotheken</li>
+                            <li>Übung mit Bootstrap & JQuery</li>
                             <li>Q&A</li>
-                            <li>What's next?</li>
                         </ol>
                     </section>
                 </section>
 
                 <section>
                     <section>
-                        <h1>01. Motivation</h1>
+                        <h1>01. Definition</h1>
+                    </section>
+
+                    <section data-state="rich">
+                        <h2>Rich Internet Applications</h2>
                     </section>
 
                     <section>
-                        <h2>Die Idee</h2>
-                        <h3>Coursera: Startup Engineering</h3>
-                        <p>by Balaji S. Srinivasan and Vijay S. Pande</p>
-                        <p>
-                            VMs, IAAS/PAAS, Unix Command Line, Text Editors, DCVS, HTML/CSS/JS, Wireframing, Databases, Frameworks, Data Pipelines,
-                            Client-side templating, HTTP, SOA/REST/JSON, API, ...
-                        </p>
+                        <h2>Was denkt ihr?</h2>
                     </section>
 
                     <section>
-                        <h2>Standards</h2>
-                        <h3>Was hat sich bewährt?</h3>
+                        <h2>Wikipedia sagt...</h2>
+                    </section>
+
+                    <section>Zusammengefasst</section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>02. Beispiele</h1>
+                    </section>
+                    <section>
+                        <h2>Kennt ihr welche?</h2>
+                    </section>
+                    <section>
+                        <h2>This presentation</h2>
+                        <p>Link goes here</p>
+                    </section>
+                    <section>
+                        <h2>Wordpress Admin</h2>
+                        <p>Link goes here</p>
+                    </section>
+                    <section>
+                        <h2>Synology NAS Admin Interface</h2>
+                        <p>Link goes here</p>
+                    </section>
+                    <section>
+                        <h2>Hier kommt noch was</h2>
+                        <p>z.B. WrapBootstrap Admin Interfaces, Konfiguratoren, ...</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>03. Verwendete Techniken</h1>
+                    </section>
+
+                    <section>
+                        Dran denken, an SEO und Barriefreiheit => HTML & Semantik
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>04. Bibliotheken</h1>
+                    </section>
+
+                    <section>
                         <ul>
-                            <li>Performance (Entwicklungs- / Server / ...)</li>
-                            <li>Wartbarkeit</li>
-                            <li>Kosten</li>
-                            <li>...</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h2>Webstartup</h2>
-                        <h3>Was muss ich wissen, um eine Webseite / Applikation zu bauen?</h3>
-                        <ul>
-                            <li>Rapid Application Development / Prototyp</li>
-                            <li>CMS / Frameworks / Tools / ...</li>
-                            <li>Skalierbarkeit</li>
-                            <li>...</li>
-                        </ul>
-                    </section>
-
-                    <section>
-                        <h2>Trends</h2>
-                        <h3>Was ist state of the art und wie sieht die Zukunft aus?</h3>
-                        <ul>
-                            <li>Neue / weiterentwicklete Datenbanken, Frameworks, IDEs, ...</li>
-                            <li>Design-Pattern</li>
-                            <li>...</li>
+                            <li>http://demos.telerik.com/kendo-ui/bootstrap/</li>
+                            <li>Diagramm Frameworks</li>
+                            <li>ExtJS</li>
+                            <li>Dojo</li>
+                            <li>Meteor</li>
+                            <li>qooxdoo</li>
                         </ul>
                     </section>
                 </section>
 
                 <section>
                     <section>
-                        <h1>02. Git</h1>
-                    </section>
-
-                    <section>
-                        <h2>Ziel:</h2>
-                        <ul>
-                            <li>Was ist Git?</li>
-                            <li>Sollte ich Git für mein Projekt einsetzen?</li>
-                            <li>KnowHow / Tools</li>
-                            <li>Einsatzszenarien</li>
-                            <li>Alternativen</li>
-                        </ul>
-                    </section>
-                </section>
-
-                <section>
-                    <section>
-                        <h1>03. Bootstrap</h1>
-                    </section>
-
-                    <section>
-                        <h2>Ziel:</h2>
-                        <ul>
-                            <li>Was ist "responsive Design"?</li>
-                            <li>Warum sollte ich ein CSS Framework benutzen?</li>
-                            <li>Demo</li>
-                            <li>Vor- / Nachteile</li>
-                            <li>Alternativen</li>
-                        </ul>
-                    </section>
-                </section>
-
-                <section>
-                    <section>
-                        <h1>04. Javascript</h1>
-                    </section>
-
-                    <section>
-                        <h2>Ziel:</h2>
-                        <ul>
-                            <li>Warum Javascript DIE Sprache der Zukunft ist?</li>
-                            <li>Wo ist es integriert?</li>
-                        </ul>
-                    </section>
-                </section>
-
-                <section>
-                    <section>
-                        <h1>05. angular.js</h1>
-                    </section>
-
-                    <section>
-                        <h2>Ziel:</h2>
-                        <ul>
-                            <li>Was ist angular.js?</li>
-                            <li>Wofür eignet es sich?</li>
-                            <li>Demo</li>
-                        </ul>
+                        <h1>05. Übung</h1>
                     </section>
                 </section>
 
@@ -280,23 +251,19 @@
 
                 <section>
                     <section>
-                        <h1>07. What's next?</h1>
+                        <h1>07. Links</h1>
                     </section>
 
                     <section>
-                        <h3 class="tagcloud">SaaS / PaaS / Iaas</h3>
-                        <h3 class="tagcloud">node.js</h3>
-                        <h3 class="tagcloud">Less / Sass</h3>
-                        <h3 class="tagcloud">CoffeeScript</h3>
-                        <h3 class="tagcloud">NoSQL</h3>
-                        <h3 class="tagcloud">MongoDB</h3>
-                        <h3 class="tagcloud">Neo4J</h3>
-                        <h3 class="tagcloud">ElasticSearch</h3>
-                        <h3 class="tagcloud">scala</h3>
-                        <h3 class="tagcloud">Hadoop</h3>
-                        <h3 class="tagcloud">Future of SQL</h3>
-                        <h3 class="tagcloud">New Relic</h3>
-                        <h3 class="tagcloud">and much more</h3>
+                        <ul>
+                            <li><a href="http://uxmag.com/articles/rich-internet-application-screen-design">http://uxmag.com/articles/rich-internet-application-screen-design</a></li>
+                            <li><a href="http://searchsoa.techtarget.com/definition/Rich-Internet-Application-RIA">http://searchsoa.techtarget.com/definition/Rich-Internet-Application-RIA</a></li>
+                            <li><a href="https://github.com/jquery-ui-bootstrap/jquery-ui-bootstrap/">https://github.com/jquery-ui-bootstrap/jquery-ui-bootstrap/</a></li>
+                            <li><a href="http://www.techrepublic.com/blog/decision-central/deciphering-the-term-rich-internet-application/">http://www.techrepublic.com/blog/decision-central/deciphering-the-term-rich-internet-application/</a></li>
+                            <li><a href="http://msdn.microsoft.com/en-us/library/ee658083.aspx">http://msdn.microsoft.com/en-us/library/ee658083.aspx</a></li>
+                            <li><a href="http://searchsoa.techtarget.com/definition/Rich-Internet-Application-RIA">http://searchsoa.techtarget.com/definition/Rich-Internet-Application-RIA</a></li>
+                            <li><a href="http://www.w3.org/TR/wai-aria/introduction">http://www.w3.org/TR/wai-aria/introduction</a></li>
+                        </ul>
                     </section>
                 </section>
 
