@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6cf7e621-718d-42c7-bcfb-b45d63a3c68d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/links.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -27,19 +26,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="377" column="136" selection-start="17246" selection-end="17246" vertical-scroll-proportion="-19.576923" vertical-offset="5900" max-vertical-offset="7378">
+            <state line="413" column="30" selection-start="24345" selection-end="24345" vertical-scroll-proportion="0.6361446" vertical-offset="6493" max-vertical-offset="8857">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="links.txt" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="links.txt" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/links.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="57" selection-start="289" selection-end="289" vertical-scroll-proportion="0.07825086" vertical-offset="0" max-vertical-offset="869">
+            <state line="4" column="57" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
               <folding />
             </state>
           </provider>
@@ -73,8 +72,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/css/custom.css" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/links.txt" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -210,7 +209,11 @@
       <created>1393880932475</created>
       <updated>1393880932475</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="more content">
+      <created>1393918051455</created>
+      <updated>1393918051455</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -380,16 +383,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$PROJECT_DIR$/links.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="377" column="136" selection-start="17246" selection-end="17246" vertical-scroll-proportion="-19.576923" vertical-offset="5900" max-vertical-offset="7378">
+        <state line="4" column="57" selection-start="289" selection-end="289" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/links.txt">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="57" selection-start="289" selection-end="289" vertical-scroll-proportion="0.07825086" vertical-offset="0" max-vertical-offset="869">
+        <state line="413" column="30" selection-start="24345" selection-end="24345" vertical-scroll-proportion="0.6361446" vertical-offset="6493" max-vertical-offset="8857">
           <folding />
         </state>
       </provider>
