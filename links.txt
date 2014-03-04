@@ -1,0 +1,5 @@
+http://www.cfobjective.com/cfo/assets/File/pdfs/EzraParkerjQuery.pdf
+https://www.ibm.com/developerworks/library/wa-jquery3/
+http://www.bendewey.com/index.php/218/building-ria-apps-with-jquery-and-wcf
+https://jqueryui.com/accordion/
+http://demos.telerik.com/kendo-ui/web/overview/index.html
