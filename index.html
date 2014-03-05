@@ -9,18 +9,18 @@
 
 		<title>WebEnginneering</title>
 
-		<meta name="description" content="WebEnginneering">
+		<meta name="description" content="RIAs">
 		<meta name="author" content="Bjoern Zapadlo">
 
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
-		<link rel="stylesheet" href="css/reveal.min.css">
-		<link rel="stylesheet" href="css/theme/default.css" id="theme">
-        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">
 
-		<!-- For syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <link rel="stylesheet" href="css/custom.css">
 
 		<!-- If the query includes 'print-pdf', use the PDF print sheet -->
 		<script>
@@ -29,8 +29,13 @@
                 return Array(+(zero > 0 && zero)).join("0") + num;
             }
 
-			document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' )
-                    + '.css" type="text/css" media="print">' );
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
 		</script>
 
 		<!--[if lt IE 9]>
@@ -368,6 +373,7 @@
                     </section>
 
                 </section>
+
                 <section>
                     <section>
                         <h1>04. Keep in mind</h1>
@@ -427,6 +433,7 @@
                             <li>Dojo</li>
                             <li>Meteor</li>
                             <li>qooxdoo</li>
+                            <li>Bootstrap</li>
                             <li>JQuery + JQuery UI</li>
                         </ul>
                     </section>
