@@ -1,0 +1,15 @@
+ul.todo {
+    padding-left: 0px;
+}
+
+li.todo-item {
+    list-style: none;
+    border-radius:5px;
+    padding: 5px;
+    border: 1px solid #adadad;
+    margin-bottom: 5px;
+}
+
+.done div {
+    text-decoration: line-through;
+}
